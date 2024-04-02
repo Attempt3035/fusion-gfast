@@ -57,16 +57,17 @@ def modify_gcode(file_path):
 def open_file_dialog():
     root = tk.Tk()
     root.withdraw()  # Hide the main window
-    file_path = filedialog.askopenfilename(
+    file_paths = filedialog.askopenfilenames(
         filetypes=[
             ("G-code files", "*.gcode *.nc *.txt"),
             ("All files", "*.*"),
         ]
     )
-    if file_path:
-        modify_gcode(file_path)
+    if file_paths:
+        for file_path in file_paths:
+            modify_gcode(file_path)
     else:
-        print("No file selected.")
+        print("No files selected.")
 
 
 # Run the dialog

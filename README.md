@@ -14,7 +14,7 @@ If you're on mac and installed python with brew or pyenv, you will likely need t
 
 ### Running the Script
 1. Execute the python script
-2. Choose your file to speed up
-3. The output file is in the same location, with the prefix `-gfast`
+2. Choose your file(s) to speed up
+3. The output file(s) are in the same location, with the prefix `-gfast`
 4. Use your own tools to run a diff check, simulate the gcode or other systems to check it does what you expect it to do.
 5. You're good to go! Run the gcode and carefully watch the machine!
